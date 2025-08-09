@@ -24,6 +24,7 @@ dependencies:
   - xz=5.4.6=h5eee18b_1
   - zlib=1.2.13=h5eee18b_1
   - pip:
+      - --extra-index-url https://download.blender.org/pypi/
       - absl-py==2.1.0
       - accelerate==1.0.1
       - addict==2.4.0
