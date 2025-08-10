@@ -207,7 +207,7 @@ def prepare_blender_file(normalized_mesh_file):
 
     folder = normalized_mesh_file.replace('object.obj', '')
     abs_folder = os.path.abspath(folder)
-    os.system(f"python Render.py --path {abs_folder}")
+    os.system(f"python Render.py --path '{abs_folder}'")
 
     blender_file = os.path.join(folder, 'blender_output.blend')
     while not os.path.exists(blender_file):
