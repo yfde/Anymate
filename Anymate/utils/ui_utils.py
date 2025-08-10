@@ -241,7 +241,7 @@ def process_input(mesh_file):
         os.makedirs(f"Anymate/tmp/{mesh_file.split('/')[-1].replace('.glb', '')}", exist_ok=True)
         abs_path = os.path.abspath(mesh_file)
 
-        os.system(f"python Convert.py --path {abs_path}")
+        os.system(f"python Convert.py --path '{abs_path}'")
 
         mesh_file = abs_path.replace('.glb', '.obj')
         while not os.path.exists(mesh_file):
